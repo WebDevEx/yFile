@@ -1,0 +1,62 @@
+{
+  "name": "vpexplorer-prototype",
+  "version": "1.1.0",
+  "author": "yWorks GmbH <yfileshtml@yworks.com>",
+  "scripts": {
+    "postinstall": "node -e \"require('fs').copyFileSync('F:/codementor1/bill/bill/yFiles-for-HTML-Complete-2.3.0.3-Evaluation/lib/license.json','./src/license.json')\"",
+    "ng": "ng",
+    "serve": "ng serve",
+    "start": "ng serve",
+    "build": "node --max_old_space_size=4096 node_modules/@angular/cli/bin/ng build",
+    "test": "ng test",
+    "e2e": "ng e2e"
+  },
+  "private": true,
+  "dependencies": {
+    "@angular/animations": "^9.1.13",
+    "@angular/cdk": "^11.0.3",
+    "@angular/common": "~9.1.9",
+    "@angular/compiler": "~9.1.9",
+    "@angular/core": "~9.1.9",
+    "@angular/forms": "~9.1.9",
+    "@angular/material": "^11.0.3",
+    "@angular/platform-browser": "~9.1.9",
+    "@angular/platform-browser-dynamic": "~9.1.9",
+    "@angular/router": "~9.1.9",
+    "hammerjs": "^2.0.8",
+    "neo4j-driver": "^4.1.1",
+    "rxjs": "~6.5.5",
+    "tslib": "^2.0.0",
+    "vue": "^2.6.12",
+    "vue-template-compiler": "^2.6.12",
+    "yfiles": "F:/codementor1/bill/yFiles-for-HTML-Complete-2.3.0.3-Evaluation/lib/es-modules/",
+    "zone.js": "~0.10.3"
+  },
+  "devDependencies": {
+    "@angular-devkit/build-angular": "~0.901.7",
+    "@angular/cli": "~9.1.7",
+    "@angular/compiler-cli": "~9.1.9",
+    "@angular/language-service": "~9.1.9",
+    "@types/node": "^14.0.9",
+    "@types/jasmine": "~3.5.10",
+    "@types/jasminewd2": "~2.0.8",
+    "codelyzer": "^5.2.2",
+    "jasmine-core": "~3.5.0",
+    "jasmine-spec-reporter": "~5.0.2",
+    "jspdf": "^2.1.1",
+    "karma": "~5.0.9",
+    "karma-chrome-launcher": "~3.1.0",
+    "karma-coverage-istanbul-reporter": "~3.0.3",
+    "karma-jasmine": "~3.3.1",
+    "karma-jasmine-html-reporter": "^1.5.4",
+    "prettier": "2.1.2",
+    "protractor": "~5.4.4",
+    "svg2pdf.js": "^2.0.0",
+    "ts-node": "~7.0.1",
+    "typescript": "~3.8.3"
+  },
+  "prettier": {
+    "semi": false,
+    "singleQuote": true
+  }
+}

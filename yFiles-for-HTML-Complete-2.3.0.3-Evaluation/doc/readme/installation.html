@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<!-- ////////////////////////////////////////////////////////////////////////
+     // @license
+     // This demo file is part of yFiles for HTML 2.3.0.3.
+     // Copyright (c) 2000-2020 by yWorks GmbH, Vor dem Kreuzberg 28,
+     // 72070 Tuebingen, Germany. All rights reserved.
+     //
+     // yFiles demo files exhibit yFiles for HTML functionalities. Any redistribution
+     // of demo files in source code or binary form, with or without
+     // modification, is not permitted.
+     //
+     // Owners of a valid software license for a yFiles for HTML version that this
+     // demo is shipped with are allowed to use the demo source code as basis
+     // for their own yFiles for HTML powered applications. Use of such programs is
+     // governed by the rights and conditions as set out in the yFiles for HTML
+     // license agreement.
+     //
+     // THIS SOFTWARE IS PROVIDED ''AS IS'' AND ANY EXPRESS OR IMPLIED
+     // WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
+     // MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN
+     // NO EVENT SHALL yWorks BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+     // SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED
+     // TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR
+     // PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
+     // LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
+     // NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+     // SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+     // 
+     ////////////////////////////////////////////////////////////////////////-->
+
+  <title>yFiles for HTML in your Project</title>
+  <link rel="stylesheet" type="text/css" href="../../doc/documentation-style.css"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+</head>
+<body>
+<header>
+  <div class="content-centered">
+    <div class="logo"></div>
+    <div class="title">
+      <a href="../../README.html">yFiles for HTML</a> <span class="angle-right"></span> Your Project
+    </div>
+  </div>
+</header>
+<div class="content">
+  <div class="content-centered">
+    <h1>Your Project</h1>
+  </div>
+
+  <div class="block-space-header">
+    <div class="content-centered">
+      <h2>Library Files</h2>
+
+      <p>
+        The yFiles for HTML library consists of the content of the <code>lib</code> directory, namely the JavaScript library
+        modules in UMD format in <code>lib/umd</code>,
+        the same functionality in ES6 module library format in <code>lib/es-modules</code>,
+        and the stylesheet <code>lib/es-modules/yfiles.css</code> (or <code>lib/umd/yfiles.css</code>) that is required
+        for both of the former options.
+      </p>
+
+      <p>
+        In order to develop applications with yFiles for HTML, you need to provide valid license information. Please see the
+        <a
+            href="../api/index.html#/dguide/licensing" target="_blank">related section in the Developer's Guide</a> for
+        the necessary setup. Evaluation versions of yFiles for HTML come with a pre-generated evaluation license file that is
+        located in <code>lib/license.json</code>. You can include this file in any HTML page that uses the library.
+      </p>
+
+      <p>
+        For detailed descriptions see also the <a href="../api/index.html#/dguide/getting_started-ide">Setting up your
+        Development Environment</a> section of the yFiles for HTML Developer's Guide.
+      </p>
+
+      <p>
+        The top-level directory <code>deployment</code> contains various examples that demonstrate the transpilation,
+        optimization, and minification of yFiles for HTML applications. For more details, see the <a
+          href="../../deployment/README.html">description in the deployment directory</a> or the respective <a
+          href="../api/index.html#/dguide/deployment" target="_blank">section in the Developer's Guide.</a>
+      </p>
+    </div>
+  </div>
+
+  <div class="block-space">
+    <div class="content-centered">
+      <h2>Working with the yFiles npm Module</h2>
+      <p>
+        Since yFiles for HTML 2.2, the library comes as an npm module. This makes it easy to install it into your projects.
+      </p>
+
+      <p>
+        The easiest way to install the yFiles for HTML npm package is using a local file path. Once you have extracted
+        the yFiles package and run the setup script (<code>npm install</code> or one of the <code>start_demos</code>
+        scripts), you will have four npm packages to choose from:
+      </p>
+      <ul>
+        <li><code>lib/es-modules/yfiles-&lt;version&gt;.tgz</code></li>
+        <li><code>lib-dev/es-modules/yfiles-&lt;version&gt;-dev.tgz</code></li>
+        <li><code>lib/umd/yfiles-&lt;version&gt;.tgz</code></li>
+        <li><code>lib-dev/umd/yfiles-&lt;version&gt;-dev.tgz</code></li>
+      </ul>
+
+      <p>
+        It is recommended to always depend on the <code>*.tgz</code> files when using yFiles for HTML as npm dependency. For
+        more information, see the dedicated <a href="../api/index.html#/dguide/yfiles_npm_module" target="_blank">section
+        in the Developer's Guide.</a>
+      </p>
+    </div>
+  </div>
+
+  <div class="block-space">
+    <div class="content-centered">
+      <h2>yFiles Developer Tools</h2>
+
+      <h3>Yeoman Generator</h3>
+
+      <p>
+        The <a href="https://github.com/yWorks/generator-yfiles-app">Yeoman generator for yFiles</a> can be used to
+        quickly scaffold a yFiles for HTML application. See its
+        <a href="https://github.com/yWorks/generator-yfiles-app">GitHub page</a> for a more detailed description.
+      </p>
+
+      <h3>IDE Code Completion</h3>
+
+      <p>
+        Auto-completion support in your IDE can be enabled through one of the typings files in <code>ide-support/</code>.
+        Please see the <a href="../api/index.html#/dguide/getting_started-ide#getting_started-ide" target="_blank">Setting
+        up Your Development Environment</a> for more information about the different IDEs and typings files.
+      </p>
+
+      <h3>TypeScript</h3>
+
+      <p>
+        TypeScript support in your IDE can be enabled through one of the various <code>ide-support/yfiles-api-*.d.ts</code> file variants. </p>
+
+      <h3>Runtime Type Checking</h3>
+
+      <p>
+        During development of your application, you can get runtime type information for library types and parameter
+        lists of methods in your browser's JavaScript console by including the following JavaScript file: <code>ide-support/yfiles-typeinfo.js</code>
+      </p>
+
+      <p>
+        For detailed descriptions see also the <a href="../api/index.html#/dguide/DevelopmentSupport">yFiles Developer
+        Tools</a> section of the yFiles for HTML Developer's Guide.
+      </p>
+
+      <h3>Code Conversion Tools</h3>
+
+      <p>
+        The <a href="../../tools/README.html">tools</a> directory contains several scripts to convert your source code
+        between various ways to import the yFiles library, e.g. from UMD to ES module imports.
+      </p>
+
+      <h3>Unobfuscated Library</h3>
+
+      <p>
+        In the debug package of yFiles for HTML, the <code>lib.debug</code> directory contains an unobfuscated version of the
+        library. These files are <b>not redistributable</b>. They may be used for debugging purposes, only.
+      </p>
+    </div>
+  </div>
+
+</div>
+<footer class="default-footer">
+  <div class="footer-block">
+    <h4>Contents</h4>
+    <a href="../../README.html">Welcome Page</a><br>
+    <a href="../../doc/api/index.html">API Documentation</a><br>
+    <a href="../../doc/api/index.html#/dguide/getting_started">Getting Started</a><br>
+    <a href="../../doc/readme/legal/SOFTWARE_LICENSE_AGREEMENT.html">License Agreement</a><br>
+    <a href="../../doc/readme/support.html">Help and Support</a>
+  </div>
+  <div class="footer-block">
+    <h4>Contact</h4>
+    yWorks GmbH<br>
+    Vor dem Kreuzberg 28<br>
+    72070 T&uuml;bingen<br>
+    Germany<br>
+    Phone: <a href="tel:+497071979050">+49 7071 979050</a><br>
+    Email: <a href="https://www.yworks.com/contact">contact(at)yworks.com</a>
+  </div>
+  <div class="footer-block">
+    <h4>Follow Us</h4>
+    <div class="social">
+      <a href="https://www.yworks.com/products/yfiles-for-html" target="_blank" class="web">Homepage</a>
+      <a href="https://www.yworks.com/newsfeed" target="_blank" class="rss">RSS Feed</a>
+    </div>
+    <div>
+      <a href="https://github.com/yWorks" target="_blank" class="gh">GitHub</a>
+      <a href="https://twitter.com/yworks" target="_blank" class="tw">Twitter</a>
+      <a href="https://www.youtube.com/user/yWorksTube" target="_blank" class="yt">YouTube</a>
+    </div>
+    <br><br>
+    <span class="copyright">COPYRIGHT &#x00A9; 2020 yWorks</span><br>
+    <a href="https://www.yworks.com/company/legal/imprint">Legal Disclosure</a> |
+    <a href="https://www.yworks.com/company/legal/terms-of-use">Terms of Use</a> |
+    <a href="https://www.yworks.com/company/legal/privacy">Privacy Policy</a>
+  </div>
+  <div class="footer-block logo"></div>
+</footer>
+</body>
+</html>

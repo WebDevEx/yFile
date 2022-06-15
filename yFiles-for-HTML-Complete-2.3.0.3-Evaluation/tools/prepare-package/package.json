@@ -1,0 +1,16 @@
+{
+  "name": "prepare-yfiles-for-html-package",
+  "version": "23.0.0",
+  "author": "yWorks GmbH <yfileshtml@yworks.com>",
+  "license": "https://www.yworks.com/products/yfiles-for-html/sla",
+  "private": true,
+  "scripts": {
+    "prepare-package": "node prepare-package.js"
+  },
+  "dependencies": {
+    "fs-extra": "^9.0.0"
+  },
+  "devDependencies": {
+    "@types/fs-extra": "^8.1.0"
+  }
+}

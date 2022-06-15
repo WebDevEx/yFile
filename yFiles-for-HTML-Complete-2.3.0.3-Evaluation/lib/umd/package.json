@@ -1,0 +1,15 @@
+{
+  "name": "yfiles-umd",
+  "description": "yFiles for HTML in UMD module format",
+  "version": "23.0.3-eval",
+  "author": "yWorks GmbH <yfileshtml@yworks.com>",
+  "homepage": "https://www.yworks.com/products/yfiles-for-html",
+  "private": true,
+  "sideEffects": false,
+  "main": "complete.js",
+  "types": "typings/yfiles-api-umd-npm.d.ts",
+  "files": [
+    "*",
+    "!*.tgz"
+  ]
+}

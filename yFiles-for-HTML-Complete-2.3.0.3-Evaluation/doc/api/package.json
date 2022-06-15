@@ -1,0 +1,29 @@
+{
+  "name": "yfiles-documentation-viewer",
+  "version": "1.0.0",
+  "description": "Offline installation of the yFiles Documentation Viewer",
+  "scripts": {
+    "download-source-sans-pro": "download --extract --out offline/sourceSansPro https://docs.yworks.com/scripts/docviewer/fonts/sourceSansPro.zip",
+    "download-font-awesome": "download --out offline/fontawesome/css --filename font-awesome.min.css https://docs.yworks.com/scripts/docviewer/fonts/font-awesome.min.css && download --out offline/fontawesome/fonts --filename fontawesome-webfont.woff2 https://docs.yworks.com/scripts/docviewer/fonts/fontawesome-webfont.woff2",
+    "postinstall": "npm run download-source-sans-pro && npm run download-font-awesome && npm run download-ecmascriptDefs && npm run download-browserDefs && npm run download-editor-bundle",
+    "download-ecmascriptDefs": "download --out offline/ice --filename ecmascriptDefs.js ../dist-remote/defs/ecmascriptDefs.js",
+    "download-browserDefs": "download --out offline/ice --filename browserDefs.js ../dist-remote/defs/browserDefs.js",
+    "download-editor-bundle": "download --out offline/ice --filename editor-bundle.js ../dist-remote/editor-bundle.81431617.js"
+  },
+  "dependencies": {
+    "download-cli": "^1.1.1",
+    "codemirror": "yWorks/CodeMirror#yworks-ice",
+    "escodegen": "estools/escodegen",
+    "commonjs-everywhere": "0.9.7",
+    "file-saver": "1.2.2",
+    "tern": "yWorks/tern#yworks-ice",
+    "angular": "1.6.3",
+    "angular-route": "1.6.3",
+    "angular-sanitize": "1.6.3",
+    "angular-animate": "1.6.3",
+    "highlightjs": "9.10.0",
+    "jszip": "3.0.0",
+    "opentip2": "2.4.6",
+    "requirejs": "2.1.15"
+  }
+}

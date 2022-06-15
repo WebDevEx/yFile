@@ -1,0 +1,43 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Run Demo Server",
+      "type": "npm",
+      "script": "start",
+      "path": "",
+      "problemMatcher": [],
+      "isBackground": true,
+      "dependsOn": ["npm: install"],
+      "runOptions": {
+        "runOn": "folderOpen"
+      },
+      "options": {
+        "env": {
+          "NO_OPEN": ""
+        }
+      }
+    },
+    {
+      "label": "Compile and Watch TypeScript Demos",
+      "type": "npm",
+      "script": "watch",
+      "path": "demos-ts/",
+      "problemMatcher": ["$tsc-watch"]
+    },
+    {
+      "label": "Build ES5 compatible demos",
+      "type": "npm",
+      "script": "demos-es5",
+      "path": "deployment/demos-es5/",
+      "problemMatcher": []
+    },
+    {
+      "label": "Add typings for VS Code to yFiles npm module",
+      "type": "npm",
+      "script": "install-npm-module-vscode",
+      "path": "tools/create-npm-typings/",
+      "problemMatcher": []
+    }
+  ]
+}

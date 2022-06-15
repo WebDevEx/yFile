@@ -1,0 +1,13 @@
+{
+  "name": "optimizer-example-for-yfiles-for-html",
+  "version": "1.0.0",
+  "author": "yWorks GmbH <yfileshtml@yworks.com>",
+  "private": true,
+  "scripts": {
+    "optimize": "node index.js complete/flowchart"
+  },
+  "devDependencies": {
+    "fs-extra": "^7.0.1",
+    "@yworks/optimizer": "^1.3.1"
+  }
+}

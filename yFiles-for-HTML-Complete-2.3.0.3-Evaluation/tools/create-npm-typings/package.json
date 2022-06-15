@@ -1,0 +1,15 @@
+{
+  "name": "create-npm-typings-tool-for-yfiles-for-html",
+  "description": "Script to create typings for the yFiles for HTML npm module",
+  "version": "1.1.0",
+  "author": "yWorks GmbH <yfileshtml@yworks.com>",
+  "private": true,
+  "scripts": {
+    "npm-module-vscode": "node index.js vscode",
+    "npm-module-webstorm": "node index.js webstorm",
+    "install-npm-module-vscode": "npm install && npm run-script npm-module-vscode"
+  },
+  "dependencies": {
+    "typescript": "~3.7.5"
+  }
+}

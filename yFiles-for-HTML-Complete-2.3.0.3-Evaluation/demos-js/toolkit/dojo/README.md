@@ -1,0 +1,24 @@
+<!--
+ //////////////////////////////////////////////////////////////////////////////
+ // @license
+ // This demo file is part of yFiles for HTML 2.3.0.3.
+ // Use is subject to license terms.
+ //
+ // Copyright (c) 2000-2020 by yWorks GmbH, Vor dem Kreuzberg 28,
+ // 72070 Tuebingen, Germany. All rights reserved.
+ //
+ //////////////////////////////////////////////////////////////////////////////
+-->
+# Dojo Demo
+
+The Dojo Demo shows how to integrate yFiles in a basic [Dojo](https://dojo.io/) application based on the Dojo `cli-create-app`.
+
+## Building the Demo
+
+1.  Go to the demo's directory `demos-js/toolkit/dojo`.
+2.  Run `npm install`.
+3.  Run `npm run dev`.
+
+This will start the development server of the Dojo application.
+
+The integrated development server of the project will automatically update the application upon code changes.

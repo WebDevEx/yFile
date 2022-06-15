@@ -1,0 +1,14 @@
+{
+  "name": "demos-for-yfiles-for-html",
+  "version": "23.0.0",
+  "author": "yWorks GmbH <yfileshtml@yworks.com>",
+  "license": "https://www.yworks.com/products/yfiles-for-html/sla",
+  "private": true,
+  "scripts": {
+    "preinstall": "cd .. && npm run prepare-package",
+    "start": "cd .. && npm start"
+  },
+  "dependencies": {
+    "yfiles": "../lib-dev/es-modules/yfiles-23.0.3-eval-dev.tgz"
+  }
+}

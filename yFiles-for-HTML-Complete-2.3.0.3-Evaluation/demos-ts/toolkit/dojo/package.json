@@ -1,0 +1,26 @@
+{
+  "name": "dojo-demo-for-yfiles-for-html",
+  "version": "1.0.0",
+  "author": "yWorks GmbH <yfileshtml@yworks.com>",
+  "license": "https://www.yworks.com/products/yfiles-for-html/sla",
+  "private": true,
+  "scripts": {
+    "dev": "dojo build --mode dev --watch file --serve",
+    "build": "dojo build --mode dist",
+    "build:dev": "dojo build --mode dev",
+    "postinstall": "node -e \"require('fs').copyFileSync('./node_modules/yfiles/yfiles.css','./src/assets/yfiles.css')\""
+  },
+  "dependencies": {
+    "@dojo/framework": "^7.0.0",
+    "@dojo/themes": "^6.0.0",
+    "@dojo/widgets": "^7.0.0",
+    "tslib": "~2.0.0",
+    "yfiles": "../../../lib-dev/es-modules/yfiles-23.0.3-eval-dev.tgz"
+  },
+  "devDependencies": {
+    "@dojo/cli": "^7.0.0",
+    "@dojo/cli-build-app": "^7.0.0",
+    "@types/node": "~14.0.9",
+    "typescript": "~3.9.3"
+  }
+}

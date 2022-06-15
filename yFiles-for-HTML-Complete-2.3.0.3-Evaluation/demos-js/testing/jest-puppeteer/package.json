@@ -1,0 +1,39 @@
+{
+  "name": "jest-puppeteer-demo-for-yfiles-for-html",
+  "version": "1.0.0",
+  "author": "yWorks GmbH <yfileshtml@yworks.com>",
+  "license": "https://www.yworks.com/products/yfiles-for-html/sla",
+  "private": true,
+  "scripts": {
+    "preinstall": "node -e \"require('fs').copyFileSync('../../../lib/license.json','./src/license.json')",
+    "start": "react-scripts start",
+    "start-test": "cross-env REACT_APP_INTEGRATION_TEST=true react-scripts start",
+    "build": "react-scripts build",
+    "test:integration": "jest -c integration/jest.config.js",
+    "test:integrationWithWatch": "jest -c integration/jest.config.js --watch",
+    "eject": "react-scripts eject"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "dependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-scripts": "3.2.0",
+    "yfiles": "../../../lib-dev/es-modules/yfiles-23.0.3-eval-dev.tgz"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.2",
+    "jest-puppeteer": "^4.4.0",
+    "puppeteer": "^3.3.0"
+  }
+}

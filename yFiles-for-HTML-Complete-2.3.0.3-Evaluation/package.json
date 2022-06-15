@@ -1,0 +1,17 @@
+{
+  "name": "yfiles-for-html",
+  "version": "23.0.0",
+  "author": "yWorks GmbH <yfileshtml@yworks.com>",
+  "license": "https://www.yworks.com/products/yfiles-for-html/sla",
+  "private": true,
+  "scripts": {
+    "start": "cd demos-js/demo-server && npm start",
+    "postinstall": "npm run prepare-package && npm run install-js-demos && npm run install-ts-demos",
+    "install-js-demos": "cd demos-js && npm i",
+    "install-ts-demos": "cd demos-ts && npm i",
+    "prepare-package": "cd tools/prepare-package && npm i && npm run prepare-package"
+  },
+  "devDependencies": {
+    "prettier": "2.0.5"
+  }
+}
